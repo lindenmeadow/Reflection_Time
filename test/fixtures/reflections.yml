@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student_name: MyString
+  block: MyString
+  teacher_name: MyString
+  project_name: MyString
+  project_type: MyString
+  conduct: MyString
+  leadership: MyString
+  work: MyString
+  creativity: MyString
+  collaboration: MyString
+  thinking: MyString
+  communication: MyString
+  comments: MyText
+  user_id: 1
+
+two:
+  student_name: MyString
+  block: MyString
+  teacher_name: MyString
+  project_name: MyString
+  project_type: MyString
+  conduct: MyString
+  leadership: MyString
+  work: MyString
+  creativity: MyString
+  collaboration: MyString
+  thinking: MyString
+  communication: MyString
+  comments: MyText
+  user_id: 1

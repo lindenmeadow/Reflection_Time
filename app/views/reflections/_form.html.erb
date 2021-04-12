@@ -1,0 +1,87 @@
+<%= form_with(model: reflection) do |form| %>
+  <% if reflection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reflection.errors.count, "error") %> prohibited this reflection from being saved:</h2>
+
+      <ul>
+        <% reflection.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :student_name %>
+    <%= form.text_field :student_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :block %>
+    <%= form.text_field :block %>
+  </div>
+
+  <div class="field">
+    <%= form.label :teacher_name %>
+    <%= form.text_field :teacher_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :project_name %>
+    <%= form.text_field :project_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :project_type %>
+    <%= form.text_field :project_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :conduct %>
+    <%= form.text_field :conduct %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leadership %>
+    <%= form.text_field :leadership %>
+  </div>
+
+  <div class="field">
+    <%= form.label :work %>
+    <%= form.text_field :work %>
+  </div>
+
+  <div class="field">
+    <%= form.label :creativity %>
+    <%= form.text_field :creativity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :collaboration %>
+    <%= form.text_field :collaboration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thinking %>
+    <%= form.text_field :thinking %>
+  </div>
+
+  <div class="field">
+    <%= form.label :communication %>
+    <%= form.text_field :communication %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_area :comments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
