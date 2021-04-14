@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   resources :reflections
   resources :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get 'sessions/new'
+  get '/signup' => 'users#new'
+  post '/signup' => 'users#create'
+  get '/users/:id' => 'users#show'
+  get '/users/edit' => 'users#edit'
+  get '/signin' => 'sessions#new'
+  post '/signin' => 'sessions#create'
+  delete '/signout' => 'sessions#destroy'
+  
+  root "home#index"
 end

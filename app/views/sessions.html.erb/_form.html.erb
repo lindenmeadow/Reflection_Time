@@ -1,0 +1,10 @@
+<%= form_for(user, url: signin_path) do |f| %>
+    <%= f.input :username,
+                required: true,
+                autofocus: true,
+                input_html: { class: "input" } %>
+    <%= f.input :password,
+                required: true,
+                input_html: { class: "input" } %>
+    <%= f.button :submit, "Sign In", class:'btn btn-primary' %>
+<% end %>
